@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>nextbuild.gradle</groupId>
+  <artifactId>nextbuild-sample</artifactId>
+  <version>1.0.RELEASE</version>
+  <versioning>
+    <versions>
+      <version>1.0.RELEASE</version>
+    </versions>
+    <lastUpdated>20150530084738</lastUpdated>
+  </versioning>
+</metadata>

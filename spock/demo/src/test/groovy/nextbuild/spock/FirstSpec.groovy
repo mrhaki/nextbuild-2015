@@ -4,20 +4,14 @@ import spock.lang.Specification
 
 class FirstSpec extends Specification {
 
-    def "check if item is added to a list"() {
-        given: 'Create an empty list'
-        final List<String> names = []
+    def "when I add an item to a list the first item should be that item"() {
+        setup:
+        final List<String> names = ['Eindhoven']
 
-        when: 'Added item to the list'
-        names << 'Spock'
+        when:
+        names << 'NextBuild'
 
-        then: 'Check if item is added'
-        names.first() == 'spock'
+        then:
+        names.size() == old(names.size()) + 1
     }
-
-    def "check size of string"() {
-        expect:
-        'Spock'.size() == 5
-    }
-
 }

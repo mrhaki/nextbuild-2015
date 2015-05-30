@@ -1,29 +1,13 @@
 package nextbuild.spock
-
 import spock.lang.Specification
-import spock.lang.Subject
-import spock.lang.Unroll
 
 class DataDrivenSpec extends Specification {
 
-    @Subject
-    final List<String> names = []
+    //@Unroll
+    def "when item #item is added it must be the first for empty list"() {
+        given:
+        final List<String> names = []
 
-    @Unroll
-    def "check item added to empty list is first item in the list"() {
-        when:
-        names << item
-
-        then:
-        names.first() == item
-
-        where:
-        item << ['NextBuild', 'Spock', 'JDriven']
-    }
-
-
-    @Unroll
-    def "check size of item #item added to list is #expectedLength"() {
         when:
         names << item
 
@@ -32,8 +16,12 @@ class DataDrivenSpec extends Specification {
 
         where:
         item        | expectedLength
+        'Spock'     | getExpectedLengthFromMethod()
         'NextBuild' | 9
-        'JDriven'   | 7
-        'Spock'     | 5
+        'JDriven'   | 6
+    }
+
+    private int getExpectedLengthFromMethod() {
+        5
     }
 }

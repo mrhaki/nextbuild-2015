@@ -1,0 +1,74 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+subprojects {
+    apply plugin: 'java'
+
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        testCompile 'junit:junit:4.11'
+    }
+}
+
+project(':services:sample') {
+    dependencies {
+        compile project(':common')
+    }
+}
+
+project(':web') {
+    apply plugin: 'war'
+
+    dependencies {
+        compile project(':services:sample')
+        compile 'javax.servlet:servlet-api:2.5'
+    }
+}
+*/

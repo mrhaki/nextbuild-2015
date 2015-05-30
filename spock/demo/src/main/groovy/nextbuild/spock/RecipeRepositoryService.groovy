@@ -1,5 +1,8 @@
 package nextbuild.spock
 
+import groovy.transform.CompileStatic
+
+@CompileStatic
 class RecipeRepositoryService {
 
     final List<Recipe> recipes = [

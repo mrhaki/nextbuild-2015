@@ -1,12 +1,14 @@
 package nextbuild.spock
 
-import spock.lang.Shared
 import spock.lang.Specification
 
 class SetupSpec extends Specification {
 
-    @Shared
-    private List<String> names = []
+    private List<String> names
+
+    def setup() {
+        names = []
+    }
 
     def "check names contains a new item when added"() {
         when:
