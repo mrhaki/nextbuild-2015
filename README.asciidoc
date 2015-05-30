@@ -1,4 +1,4 @@
 = NextBuild 2015
 
-Code samples.
+Code samples for Spock and Gradle presentations at NextBuild 2015.
 
