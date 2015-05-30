@@ -1,0 +1,7 @@
+build/
+target/
+.eclipse/
+.classpath
+.project
+.idea/
+.gradle/

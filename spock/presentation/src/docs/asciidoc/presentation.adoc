@@ -1,0 +1,25 @@
+= Testing with Spock is fun
+
+
+== Hubert Klein Ikkink
+
+* Java developer for many years (since 1996)
+* Live in The Netherlands (Tilburg)
+* Work at JDriven as developer
+* Started with Groovy in 2008
+* http://mrhaki.blogspot.com blog about Groovy, Grails, Gradle, Spock and more
+* Twitter: @mrhaki
+* Free book at http://leanpub.com/u/mrhaki
+
+
+== Introduction
+
+
+* Specifications and mocking
+* Spock has a Groovy DSL and transformations for writing specifications (tests)
+* Built-in support for mocking and stubbing
+* Data driven testing with data providers and data tables
+* Can be used for testing Java and Groovy code
+* Access to all Groovy goodness
+
+
